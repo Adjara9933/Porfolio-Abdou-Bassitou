@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* Styles généraux */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #14a920;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      padding-top: 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    header .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: white;
+      color: #14a920;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    header .btn:hover {
+      background-color: #019aaa;
+      color: white;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #14a920;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px 0;
+      object-fit: cover;
+    }
+
+    .about p {
+      font-size: 1rem;
+      margin: 10px 0;
+      color: #333;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    .about .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .about .btn:hover {
+      background-color: #019aaa;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      color: #14a920;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .project-card .btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #14a920;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skills .skill-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills .skill-card h3 {
+      font-size: 1.2rem;
+      color: #14a920;
+    }
+
+    .skills .skill-card .progress-bar {
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .skills .skill-card .progress-bar div {
+      height: 10px;
+      background-color: #14a920;
+    }
+
+    .contact-form {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #14a920;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #14a920;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 20px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- En-tête -->
+  <header>
+    
+    <h1>Koukouwe Abdou-Bassitou</h1>
+    <nav>
+      <a href="#about" class="btn">À propos</a>
+      <a href="#projects" class="btn">Projets</a>
+      <a href="#skills" class="btn">Compétences</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="about" class="about">
+    <h2>À propos de moi</h2>
+    <img src="Photo de profil.jpeg.jpeg"alt="Photo de profil">
+    <p>
+      Je m'appelle Abdou-Bassitou Koukouwe, passionné par la création de sites web modernes et interactifs. Je suis actuellement étudiant(e)
+      en développement web et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.
+    </p>
+    <a href="Abdou Bassitou Koukouwe Resume.pdf" class="btn" download>Télécharger mon CV</a>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Projet 1</h3>
+        <p>Un site web interactif créé avec HTML, CSS et JavaScript.</p>
+        <a href="#" class="btn">Voir</a>
+      </div>
+      <div class="project-card">
+        <h3>Projet 2</h3>
+        <p>Une application web simple pour la gestion de tâches.</p>
+        <a href="#" class="btn">Voir</a>
+      </div>
+      <div class="project-card">
+        <h3>Projet 3</h3>
+        <p>Un portfolio personnel conçu pour les développeurs.</p>
+        <a href="#" class="btn">Voir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="skills" class="skills">
+    <h2>Mes Compétences</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <p>Gestion de projet</p>
+        <div class="progress-bar">
+          <div style="width: 80%;"></div>
+        </div>
+        <p>Résolution de problème</p>
+        <div class="progress-bar">
+          <div style="width: 90%;"></div>
+        </div>
+        <p>Adaptabilité</p>
+        <div class="progress-bar">
+          <div style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Hard Skills</h3>
+        <p>HTML</p>
+        <div class="progress-bar">
+          <div style="width: 85%;"></div>
+        </div>
+        <p>CSS</p>
+        <div class="progress-bar">
+          <div style="width: 80%;"></div>
+        </div>
+        <p>JavaScript</p>
+        <div class="progress-bar">
+          <div style="width: 70%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="contact-form">
+    <h2>Contactez-moi</h2>
+    <form>
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Proposition DCLIC. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
